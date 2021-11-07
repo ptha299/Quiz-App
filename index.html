@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- TODO(you): Make whatever changes needed to complete the assignment! -->
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Quiz</title>
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+  <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer="true"></script>
+</head>
+
+<body>
+ 
+  <div class="bodyContainer">
+
+    <div class="wholeBody">
+
+      <header>
+
+        <div class="header">
+
+          <div id="courseName">WPR</div>
+
+          <div id="mern">
+            <div>M</div>
+            <div>E</div>
+            <div>R</div>
+            <div>N</div>
+          </div>
+
+        </div>
+
+      </header>
+
+
+      <!--SCREEN 1: INTRODUCTION-->
+
+
+      <article>
+
+        <section id="quizName">
+          <div class="border">
+            <span class="quiztext">HTML Quiz</span>
+          </div>
+        </section>
+
+        <div class="author">
+          <p>By An Phan</p>
+        </div>
+
+        <section id="introduction">
+
+          <div class="theTest">
+            <h3>The Test</h3>
+            <p>
+              The test contains 10 questions and there is no time limit.
+              <br><br>
+              The test is not official, it's just a nice way to see how much you know, or don't know, about HTML.
+            </p>
+          </div>
+
+          <div class="countScore">
+            <h3>Count Your Score</h3>
+            <p>
+              You will get 1 point for each correct answer. At the end of the Quiz, your total score will be displayed. Maximum score is 10 points.
+            </p>
+          </div>
+
+          <div class="startQuiz">
+            <h3>Start the quiz</h3>
+            <p>Good luck!</p>
+            <br>
+            <button id="start_btn" class="blueButton">Start the HTML quiz ></button>
+          </div>
+
+        </section>
+
+
+        <!--SCREEN 2: ATTEMPT QUIZ-->
+
+
+        <section id="attempt-quiz">
+          <div class="quizBox">
+            <!-- <h3>Question 1 of 10</h3>
+        <p>question 1</p>
+        <div class="option">
+          <input type="radio" name="radio1" id="answer1"/>
+          <label for="answer1">option 1</label>
+        </div>
+        <div class="option">
+          <input type="radio" name="radio1" id="answer2" >
+          <label for="answer2">option 2</label>
+        </div>
+        <div class="option">
+          <input type="radio"  name="radio1" id="answer3">
+          <label for="answer3">option 3</label>
+        </div>
+        <div class="option">
+          <input type="radio"  name="radio1" id="answer4">
+          <label for="answer4">option 4</label>
+        </div>
+
+        <h3>Question 2 of 10</h3>
+        <p>question 2</p>
+        <div class="option">
+          <input type="radio" name="radio2" id="answer5"/>
+          <label for="answer5">option 1</label>
+        </div>
+        <div class="option">
+          <input type="radio" name="radio2" id="answer6" >
+          <label for="answer6">option 2</label>
+        </div>
+        <div class="option">
+          <input type="radio"  name="radio2" id="answer7">
+          <label for="answer7">option 3</label>
+        </div>
+        <div class="option">
+          <input type="radio"  name="radio2" id="answer8">
+          <label for="answer8">option 4</label>
+        </div>
+
+        <h3>Question 3 of 10</h3>
+        <p>question 3</p>
+        <div class="option">
+          <input type="radio" name="radio3" id="answer9"/>
+          <label for="answer9">option 1</label>
+        </div>
+        <div class="option">
+          <input type="radio" name="radio3" id="answer10" >
+          <label for="answer10">option 2</label>
+        </div>
+        <div class="option">
+          <input type="radio"  name="radio3" id="answer11">
+          <label for="answer11">option 3</label>
+        </div>
+        <div class="option">
+          <input type="radio"  name="radio3" id="answer12">
+          <label for="answer12">option 4</label>
+        </div>
+
+      </div> -->
+          </div>
+          </div>
+        </section>
+
+
+         <!--SCREEN 3: REVIEW QUIZ-->
+
+         
+        <section id="review-quiz" class="hidden">
+          <!-- <h3>Question 1 of 10</h3>
+        <p>question 1</p>
+        <div class="option correct-result">
+          <input type="radio" name="radio4" id="answer13" checked disabled/>
+          <label for="answer13">option 1</label>
+          <span class="c-answer">Correct answer</span>
+        </div>
+        <div class="option">
+          <input type="radio" name="radio4" id="answer14" disabled>
+          <label for="answer14">option 2</label>
+        </div>
+        <div class="option">
+          <input type="radio"  name="radio4" id="answer15" disabled>
+          <label for="answer15">option 3</label>
+        </div>
+        <div class="option">
+          <input type="radio"  name="radio4" id="answer16" disabled>
+          <label for="answer16">option 4</label>
+        </div>
+
+        <h3>Question 2 of 10</h3>
+        <p>question 2</p>
+        <div class="option incorrect-result">
+          <input type="radio" name="radio5" id="answer17" disabled/>
+          <label for="answer17">option 1</label>
+          <span class="c-answer">Correct answer</span>
+        </div>
+        <div class="option wrong-result">
+          <input type="radio" name="radio5" id="answer18" checked disabled>
+          <label for="answer18">option 2</label>
+          <span class="c-answer">Your answer</span>
+        </div>
+        <div class="option">
+          <input type="radio"  name="radio5" id="answer19" disabled>
+          <label for="answer19">option 3</label>
+        </div>
+        <div class="option">
+          <input type="radio"  name="radio5" id="answer20" disabled>
+          <label for="answer20">option 4</label>
+        </div>
+
+        <h3>Question 3 of 10</h3>
+        <p>question 3</p>
+        <div class="option">
+          <input type="radio" name="radio6" id="answer21" disabled/>
+          <label for="answer21">option 1</label>
+        </div>
+        <div class="option">
+          <input type="radio" name="radio6" id="answer22" disabled>
+          <label for="answer22">option 2</label>
+        </div>
+        <div class="option incorrect-result">
+          <input type="radio"  name="radio6" id="answer23" disabled>
+          <label for="answer23">option 3</label>
+          <span class="c-answer">Correct answer</span>
+        </div>
+        <div class="option">
+          <input type="radio"  name="radio6" id="answer24" disabled>
+          <label for="answer24">option 4</label>
+        </div> -->
+          <div id="results">
+            <div class="quizForm result">
+              <div class="title-form result">Result</div>
+              <div class="score per_10"></div>
+              <div class="score per_100"></div>
+              <div class="message"></div>
+              <div class="blueButton-block">
+                <button class="blueButton tryAgain">
+                  Try again >
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,258 @@
+/* TODO(you): Write the CSS to finish the assignment! */
+
+body,
+html {
+  font-family: "Proxima Nova", "Helvetica", "Arial", sans-serif;
+  font-size: 18px;
+  color: #222222;
+}
+
+.header {
+  justify-content: space-between;
+  align-items: center;
+  width: 700px;
+  height: 80px;
+  border: #ccc 1px;
+  display: flex;
+}
+
+#introduction {
+  width: 700px;
+}
+
+.bodyContainer {
+  margin: auto;
+  max-width: 700px;
+}
+
+#courseName {
+  font-family: Helvetica, sans-serif;
+  color: #ee3322;
+  font-size: 32px;
+  font-weight: bold; 
+}
+
+#mern {
+  display: flex;
+}
+
+#mern div {
+  background-color: #ffee00;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-30deg);
+  margin: 5px 5px 5px 5px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  border-radius: 100%;
+}
+
+.border {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  top: 35%;
+}
+
+.border .quiztext {
+  font-family: "Pangolin", "Trebuchet MS", cursive;
+  color: black;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: table;
+  max-width: 75%;
+  top: 30%;
+}
+
+.author {
+  font-size: 14px;
+  text-align: center;
+}
+
+#quizName {
+  background-image: url("images/background.jpg");
+  background-position: center center;
+  width: 700px;
+  height: 425px;
+  background-size: cover;
+}
+
+.startQuiz {
+  padding: 18px;
+  background-color: #f1f1f1;
+  text-align: center; 
+}
+
+.blueButton:hover {
+  cursor: pointer;
+  background-color: #0d8bf2;  
+}
+
+.blueButton {
+  padding: 18px 32px;
+  color: white;
+  font-size: 18px;
+  background-color: #2196f3;
+}
+
+.greenButton:hover {
+  cursor: pointer;
+  background-color: #46a049;
+}
+
+.greenButton {
+  padding: 18px 32px;
+  color: white;
+  font-size: 18px;
+  background-color: #4caf50;
+}
+
+
+.submit-block{
+  margin: 20px 0;
+  height: 100px;
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.submit-button {
+  text-align: center;
+}
+
+.quizBox .question-text {
+  margin: 30px;
+}
+
+.quizBox h3 {
+  margin-top: 30px;
+}
+
+.quizBox .option {
+  margin-bottom: 1px;
+  padding: 25px 0;
+  position: relative;
+  display: flex;
+  margin: 1px 0px;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+
+.hidden {
+  display: none;
+}
+
+.quizBox .option:hover {
+  background-color: #ddd;
+}
+
+.quizBox .option.selected {
+  background-color: #ddd;
+}
+
+.quizBox .option.correct {
+  background-color: #d4edda;
+}
+
+.quizBox .option.wrong {
+  background-color: #f8d7da;
+}
+/* 
+.option {
+  display: flex;
+} */
+
+
+.quizForm {
+  margin-top: 20px;
+  border: #dcdcdc 1px thick;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 250px;
+}
+
+.blueButton-block {
+  justify-content: center;
+  display: flex;
+}
+
+.score {
+  margin-top: 15px;
+  font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #222222;
+  font-size: 18px;
+  text-align: center;
+}
+
+.message {
+  margin: 20px 0;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+}
+
+.result {
+  font-weight: bold;
+  font-size: 2rem;
+  justify-content: center;
+  display: flex;
+}
+
+.message-res {
+  font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+  color: #eee;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  padding: 5px 4px;
+  top: 12px;
+  right: 10px;
+  position: absolute;
+}
+
+label {
+  position: absolute;
+  width: 655px;
+  padding: 15px 0;
+  font-size: 18px;
+  padding-left: 45px;
+}
+
+input {
+  position: absolute;
+  margin-left: 15px;
+}
+
+button{
+  border: none;
+}
+
+/* mobile view */
+@media only screen and (max-width: 700px) {
+  body {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #mern {
+    display: none;
+  }
+}
+
+  .hidden{
+  display:none;
+}
